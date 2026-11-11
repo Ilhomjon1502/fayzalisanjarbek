@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fayzali — IT yo'li boshlandi</title>
+  <meta name="description" content="Fayzali Codial akademiyasida kompyuter savodxonligini o'rganishni boshlagan kun — 2026-yil 11-noyabr. 10 yildan keyin eslash uchun xotira sahifasi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="bg-glow" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-telegram" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">Fayzali<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#xotira">Xotira</a>
+        <a href="#yol">Yo'l xaritasi</a>
+        <a href="#xat">Xat</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Rejimni almashtirish">🌙</button>
+        <a href="#yol" class="btn btn-primary">Boshlaymiz</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Codial · 2026-yil 11-noyabr</span>
+          <h1>Bugun <span class="hl">IT yo'li</span> boshlandi — 10 yildan keyin eslaysan</h1>
+          <p>Salom, Fayzali! Bu sahifa — senga bir kun kelib “men qayerdan boshlagan edim?” deb qaytib qarash uchun yaratilgan xotira. Bugun sen kompyuter savodxonligini o'rganishga birinchi qadamni qo'yding.</p>
+          <div class="hero-actions">
+            <a href="#yol" class="btn btn-primary">Yo'l xaritasini ko'rish</a>
+            <a href="#xat" class="btn btn-outline">✉️ Kelajakka xat</a>
+          </div>
+          <div class="countdown" id="countdown" aria-live="off">
+            <div class="cd-title">2036-yil 11-noyabrgacha</div>
+            <div class="cd-row">
+              <div><b id="cdY">0</b><small>yil</small></div>
+              <div><b id="cdD">0</b><small>kun</small></div>
+              <div><b id="cdH">0</b><small>soat</small></div>
+              <div><b id="cdM">0</b><small>daqiqa</small></div>
+              <div><b id="cdS">0</b><small>soniya</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="images/fayzali.webp" alt="Fayzali — Codial akademiyasida">
+          </div>
+          <div class="float f1">
+            <span class="fi" style="background: var(--primary-soft);">🎂</span>
+            <span><b>18 yosh</b><small>hozir</small></span>
+          </div>
+          <div class="float f2">
+            <span class="fi" style="background: var(--green-soft);">🚀</span>
+            <span><b>2036</b><small>IT mutaxassis</small></span>
+          </div>
+          <div class="float f3">
+            <span class="fi" style="background: var(--accent-soft);">💻</span>
+            <span>Fayzali<br><small>Kompyuter tizimlari dasturchisi</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memory -->
+    <section class="about" id="xotira">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Xotira</div>
+          <h2>O'sha kun nima bo'lgan edi</h2>
+          <p>Kelajakda bu sahifani ochganingda holatni aniq eslab qolishing uchun.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-item">
+            <div class="icon" style="background: var(--primary-soft);">🏫</div>
+            <h4>Codial akademiyasi</h4>
+            <p>Fayzali va akalari Sanjarbek kompyuter savodxonligini o'qish uchun Codialga tashrif buyurishdi.</p>
+          </div>
+          <div class="about-item">
+            <div class="icon" style="background: var(--accent-soft);">🎓</div>
+            <h4>So'x tumani texnikumi</h4>
+            <p>Fayzali hozir kompyuter tizimlarida dasturlash yo'nalishida o'qiyapti. U 18 yoshda.</p>
+          </div>
+          <div class="about-item">
+            <div class="icon" style="background: var(--green-soft);">🎯</div>
+            <h4>Katta maqsad</h4>
+            <p>10 yildan keyin Fayzali kuchli IT mutaxassisi bo'lib yetishgan bo'ladi. Buning uchun unga mos yo'l kerak.</p>
+          </div>
+        </div>
+
+        <div class="brothers">
+          <figure>
+            <img src="images/fayzali.webp" alt="Fayzali">
+            <figcaption><b>Fayzali</b><small>Bugun boshladi</small></figcaption>
+          </figure>
+          <figure>
+            <img src="images/sanjarbek.webp" alt="Sanjarbek">
+            <figcaption><b>Sanjarbek</b><small>Birga o'qishga keldi</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="yol">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Yo'l xaritasi</div>
+          <h2>Fayzaliga mos yo'l</h2>
+          <p>Texnikumdagi o'qish bilan birga bosqichma-bosqich — har qadam keyingisiga asos.</p>
+        </div>
+        <ol class="timeline">
+          <li class="step">
+            <span class="dot">1</span>
+            <div class="card">
+              <span class="when">2026 · hozir</span>
+              <h3>Kompyuter savodxonligi</h3>
+              <p>Klaviatura, fayllar, Windows, internet va xavfsizlik, Word/Excel. Poydevor shu yerdan quriladi.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="dot">2</span>
+            <div class="card">
+              <span class="when">2027</span>
+              <h3>Veb asoslari: HTML, CSS, JavaScript</h3>
+              <p>Birinchi o'z sayting. Har hafta bitta kichik sahifa yasab, GitHub'ga joylab borish.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="dot">3</span>
+            <div class="card">
+              <span class="when">2027–2028</span>
+              <h3>Dasturlash tili va Git</h3>
+              <p>Python yoki JavaScript'ni chuqur o'rganish, algoritmlar, mantiqiy fikrlash va Git bilan jamoada ishlash.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="dot">4</span>
+            <div class="card">
+              <span class="when">2028–2029</span>
+              <h3>Backend va ma'lumotlar bazasi</h3>
+              <p>Server, API, SQL. Telegram bot va o'z loyihalaring — portfolio shu yerda to'planadi.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="dot">5</span>
+            <div class="card">
+              <span class="when">2029–2031</span>
+              <h3>Birinchi ish va jamoa tajribasi</h3>
+              <p>Intern yoki Junior dasturchi. Haqiqiy loyihalar, kod review va mentorlardan o'rganish.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="dot">6</span>
+            <div class="card">
+              <span class="when">2031–2036</span>
+              <h3>Kuchli IT mutaxassis</h3>
+              <p>Middle → Senior. Tanlangan yo'nalishda chuqur mutaxassis, boshqalarga ustoz bo'lish.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="about" id="xat">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Xat</div>
+          <h2>2036-yildagi Fayzaliga</h2>
+        </div>
+        <article class="letter">
+          <p>Salom, Fayzali!</p>
+          <p>Agar bu sahifani o'qiyotgan bo'lsang, demak 10 yil o'tgan. 2026-yil noyabrda sen 18 yoshda, So'x tumanidagi texnikumda o'qir eding va Codialga kompyuter savodxonligini o'rganishga kelgan eding. Yoningda akang Sanjarbek bor edi.</p>
+          <p>O'sha kuni hammasi noldan boshlangan. Agar bugun sen kuchli IT mutaxassisi bo'lgan bo'lsang — bu kunlarni, kechalari qilingan mashqlarni va to'xtamaganingni eslab qo'y.</p>
+          <p>Agar hali yo'lda bo'lsang — hech gap emas. Shu sahifadagi yo'l xaritasiga qayt va keyingi qadamni qo'y.</p>
+          <p class="sign">— Seni 2026-yilda ko'rgan ustozing</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="aloqa">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Bog'lanish</h2>
+          <p>Fayzali va akasi Sanjarbek bilan aloqa.</p>
+          <div class="contact-links">
+            <a href="tel:+998776004509" class="contact-link">
+              <span class="ci phone"><svg><use href="#i-phone"/></svg></span>
+              <span><small>Fayzali · Telefon</small>+998 77 600 45 09</span>
+            </a>
+            <a href="https://t.me/F_zamzamaliev" target="_blank" rel="noopener" class="contact-link">
+              <span class="ci tg"><svg><use href="#i-telegram"/></svg></span>
+              <span><small>Fayzali · Telegram</small>@F_zamzamaliev</span>
+            </a>
+            <a href="tel:+998955800703" class="contact-link">
+              <span class="ci phone"><svg><use href="#i-phone"/></svg></span>
+              <span><small>Sanjarbek · Telefon</small>+998 95 580 07 03</span>
+            </a>
+            <a href="https://t.me/Dr_Nevropotolog" target="_blank" rel="noopener" class="contact-link">
+              <span class="ci tg"><svg><use href="#i-telegram"/></svg></span>
+              <span><small>Sanjarbek · Telegram</small>@Dr_Nevropotolog</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://t.me/F_zamzamaliev" target="_blank" rel="noopener" class="fs tg" aria-label="Telegram" title="Telegram"><svg><use href="#i-telegram"/></svg></a>
+        <a href="tel:+998776004509" class="fs phone" aria-label="Telefon" title="Telefon"><svg><use href="#i-phone"/></svg></a>
+      </div>
+      © <span id="year">2026</span> Fayzali · Codial akademiyasi xotirasi
+    </div>
+  </footer>
+
+</body>
+</html>
